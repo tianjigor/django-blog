@@ -26,5 +26,5 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.11 (E:\Anaconda2\Anaconda\python.exe)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.11 virtualenv at E:\Django\Envs\blogproject_env" project-jdk-type="Python SDK" />
 </project>
