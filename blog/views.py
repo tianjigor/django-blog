@@ -2,7 +2,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
-from models import Post, Category
+from models import Post, Category, Tag
 from comments.forms import CommentForm
 import markdown
 # Create your views here.
@@ -36,4 +36,10 @@ def archives(request, year, month):
 def category(request, pk):
     cate = get_object_or_404(Category, pk=pk)
     post_list = Post.objects.filter(category=cate)
+    return render(request, 'blog/index.html', context={'post_list': post_list})
+
+
+def tag(request, pk):
+    cate = get_object_or_404(Tag, pk=pk)
+    post_list = Post.objects.filter(tag=cate)
     return render(request, 'blog/index.html', context={'post_list': post_list})
