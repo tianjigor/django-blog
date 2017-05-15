@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'g1)gvr&(smpq*+0_m7^sqz8n=)w)uv$h!f#(4%$i!os$saz91w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.tianjigor.space']
+# ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.tianjigor.space']
 
 
 # Application definition
