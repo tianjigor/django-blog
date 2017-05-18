@@ -30,6 +30,8 @@ class Post(models.Model):
     category = models.ForeignKey(Category)
     tags = models.ManyToManyField(Tag, blank=True)
     author = models.ForeignKey(User)
+    music = models.CharField(max_length=30, blank=True)
+
 
     def __str__(self):
         return self.title

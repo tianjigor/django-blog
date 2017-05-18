@@ -116,7 +116,7 @@
 							<ul>
                                 {% for tag in tag_count_list %}
 								<li>
-									<a href="{% url 'blog:category' tag.pk %}">{{ tag.name }}({{ tag.num_posts }})</a>
+									<a href="{% url 'blog:tag' tag.pk %}">{{ tag.name }}({{ tag.num_posts }})</a>
 								</li>
                                 {% endfor %}
 							</ul>

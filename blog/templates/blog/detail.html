@@ -14,6 +14,11 @@
                 <span class="comments-link"><a href="#">4 Comments</a></span>
             </div>
         </header>
+
+        {% if post.music %}
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id={{ post.music }}&auto=1&height=66"></iframe>
+        {% endif %}
+
         <div class="entry-content clearfix">
             {{ post.body|safe }}
         </div>

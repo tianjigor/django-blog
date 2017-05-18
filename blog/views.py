@@ -24,7 +24,7 @@ def detail(request, pk):
     comment_list = post.comment_set.all()
     context = {'post': post,
                'form': form,
-               'comment_list': comment_list}
+               'comment_list': comment_list,}
     return render(request, 'blog/detail.html', context=context)
 
 
@@ -41,7 +41,7 @@ def category(request, pk):
 
 def tag(request, pk):
     cate = get_object_or_404(Tag, pk=pk)
-    post_list = Post.objects.filter(tag=cate)
+    post_list = Post.objects.filter(tags=cate)
     return render(request, 'blog/index.html', context={'post_list': post_list})
 
 
